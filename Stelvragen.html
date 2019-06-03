@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <link href="CSS/grid4.css" type="text/css" rel="stylesheet">
+      <script type="text/javascript" src="javascript/script.js"></script>
+      <meta name="viewport" content="width=device-width", initial scale="1.0">
+      <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+      <title> Home Imperium </title>
+    </head>
+    <body>
+      <div class="wrapper">
+        <div class="hometree">
+            Home/Word Lid
+        </div>
+        <div class="navigation">
+          <ul>
+            <li><a class="navigatie" href="index.html">Home</a></li>
+            <li><a class="navigatie" href="#Agenda">Agenda</a></li>
+            <li><a class="navigatie" href="Toneelgroepimperium.html">Toneelgroep Imperium</a></li>
+            <li><a class="navigatie" href="#archief">archief</a></li>
+            <li><a class="navigatie" href="#fotoboek">fotoboek</a></li>
+            <li><a class="navigatie" href="#huurtheaterimperium">Huur Theater Imperium</a></li>
+          </ul>
+        </div>
+        <div class="content1">
+          <h1> Stel vragen </h1>
+          <br>
+          <p class="formtekst">
+          stel hier je vragen over toneelgroep of theater Imperium. <br>
+          of het nou gaat om info over welke shows er binnenkort </br>
+          komen, of je oma in haar rolstoel ook toegang heeft tot het <br>
+          theater of zelfs wie die knappe jongen was die je op het <br>
+          podium zag.
+          <br>
+          <br>
+
+          <form action="#" id="verstuurvraag">
+            Email:<br>
+            <input  class="placeholders" id="email" type="email" name="email" placeholder="Eric@gmail.com" required data-value-missing="Email is verplicht">
+            <br>
+            Onderwerp:<br>
+            <input class="placeholders" id="onderwerp" type="text" name="onderwerp" placeholder="onderwerp" required data-value-missing="Onderwerp is verplicht">
+            <br>
+            Naam:<br>
+            <input class="placeholders" id="naam" type="text" name="naam" placeholder="Mickey Mouse" required data-value-missing="Naam is verplicht">
+            <br>
+            Vraag:<br>
+            <textarea name="tekstvak" id="tekstvak" placeholder="Stel hier uw vraag." required data-value-missing="Vraag is verplicht">
+            </textarea>
+            <br>
+            <br>
+            <input type="submit" class="button" value="Verstuur">
+          </form>
+        </div>
+        <!-- in dit vlak staat de kop, tekst en daarna een formulier om een vraag te stellen, dit formulier is geconnect aan script1.js, zodat het formulier kan worden
+      gechecked of er dingen zijn ingevult en of de email wel echt is-->
+          <div class="content2">
+            <div class="slideshow">
+            <img class="mySlides" src="Images/DPK5_3.jpg" style="width:953.60252525253px;height:634.4px;border:0;">
+            <img class="mySlides" src="Images/DPK6_614.jpg" style="width:953.60252525253px;height:634.4px;border:0;">
+            <img class="mySlides" src="Images/DPP_3.jpg" style="width:953.60252525253px;height:634.4px;border:0;">
+            </div>
+
+            <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+      	</script>
+      </div>
+      <!-- in dit vlak staat een carousel van foto's van Imperium, als eerst worden de fotos samengesteld en daarna dankzij een javascript code (loop) worden de
+    fotos omstebeurt gedisplayed-->
+        <div class="footer1">
+            <p class="footer">
+              Theater Imperium Oude Vest 33E 2312XR Leiden
+            </p>
+        </div>
+        <div class="footer2">
+          <p class="footer">
+            Volg ons op
+          </p>
+          <a class="icon" href="default.asp"><img src="Images/twitter.png" alt="Twitter" style="width:20px;height:20px;border:0;"></a>
+          <a class="icon" href="default.asp"><img src="Images/Asset 1.png" alt="Facebook" style="width:20px;height:20px;border:0;"></a>
+         <img class="imperiumlogo" src="Images/imperium.png" alt="imperiumlogo">
+        </div>
+      </div>
+    </body>
+  </html>

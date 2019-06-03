@@ -1,0 +1,127 @@
+* {
+   margin:0;
+   padding: 0;
+   font-family: Questrial, serif;
+}
+/* geeft aan dat de tekst allemaal in hetzelfde letterype staat*/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+  grid-template-rows: 12px 4% 506.500px 506.500px 60px;
+
+  }
+  /* is het template voor de grid, deze initialiseerd ook de grid */
+
+  .hometree{
+  grid-row: 1/2;
+  grid-column: 1/6;
+  font-size: 24px;
+  }
+
+  /* de plekken en fontsize van de stamboom */
+
+  li a.active {
+     background-color: #black;
+     color: #EDF2F4;
+  }
+
+.navigation {
+  grid-column: 1/7;
+  grid-row: 2/3;
+  margin-top: 10px;
+}
+
+/* de plekken en margin van de navigatie class*/
+ul {
+        background-color: #DA0043;
+}
+li {
+      display: inline-block;
+      width: calc((100% / 6) - 4px);
+      padding: 10px 0;
+      text-align: center;
+      vertical-align: middle;
+    }
+/* dit zijn alle eigenschappen van de taakbalk*/
+.navigatie {
+  color: #EDF2F4;
+}
+
+li:hover {
+    background-color: #FF6978;
+    }
+
+.content1 {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  position: relative;
+}
+/* geeft de plek aan van de content1 vlak, dus de eerste afbeelding*/
+
+.content2 {
+  grid-column: 4/7;
+  grid-row: 3/4;
+  position: relative;
+}
+/* geeft de plek aan van de content2 vlak, dus de tweede afbeelding*/
+.content3 {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  position: relative;
+}
+/* geeft de plek aan van de content3 vlak, dus de derde afbeelding*/
+.content4 {
+  grid-column: 4/7;
+  grid-row: 4/5;
+  position: relative;
+}
+/* geeft de plek aan van de content4 vlak, dus de vierde afbeelding*/
+.footer1 {
+grid-column: 1/5;
+grid-row: 5/6;
+background-color: #EDF2F4;
+}
+/* geeft de plek aan van de footer1 en de achtergrondkleur, hierin staat het adres */
+
+.footer2  {
+  grid-column:4/7;
+  grid-row: 5/6;
+  background-color: #EDF2F4;
+}
+/* geeft de plek aan van de footer2 en de achtergrondkleur, hierin staan de social media  */
+p {
+  float: left;
+  padding-top: 16px;
+}
+.icon {
+  float: left;
+  padding-top: 16px;
+}
+.imperiumlogo {
+  padding-left: 33%;
+  width: 58px;
+  height: 50.2483px;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  color:  #EDF2F4;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: Questrial, serif;
+}
+/* dit kreeg ik eerst niet voorelkaar, de teksten die op de afbeeldingen staan. uiteindelijk heb ik maar code hergebruikt van de wie zijn wij pagina om de tekst erbovenop te doen*/
+.styleguide{
+  color: black;
+  padding-left: 150px;
+  font-family: Questrial, serif;
+}
